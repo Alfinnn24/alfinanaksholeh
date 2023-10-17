@@ -24,7 +24,7 @@ public class DoWhileCuti16 {
                     break;
                 }
             } else if (konfirmasi.equalsIgnoreCase("t")) {
-                
+                break;
             }
         } while (jatahCuti > 0);
     }
