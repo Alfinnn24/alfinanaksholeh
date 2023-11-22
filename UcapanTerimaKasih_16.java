@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class UcapanTerimaKasih_16 {
+    public static String PenerimaUcapan(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Tuliskan NAMA orang yang ingin anda beri ucapan:");
+        String namaOrang = sc.nextLine();
+        return namaOrang;
+    }
+    public static String UcapanTambahan(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Tuliskan pesan tambahan yang ingin anda sampaikan: ");
+        String pesantambahan = sc.nextLine();
+        sc.close();
+        return pesantambahan;
+    }
+    public static void UcapanTerimakasih() {
+        String nama = PenerimaUcapan();
+        String tambahan = UcapanTambahan();
+        System.out.println("Thank you "+nama+" for being the best teacher in the world.\n"+
+        "You inspired in me a love for learning and made me feel like I could ask you anything.\n"+ tambahan);
+    }
+    public static String UcapanTambahan(String ucapanTambahan) {
+        String ucapan = ucapanTambahan;
+        return ucapan;
+    }
+    public static void main(String[] args) {
+        UcapanTerimakasih();
+    }
+    
+}
